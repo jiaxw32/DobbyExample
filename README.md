@@ -15,6 +15,6 @@ Build and debug Dobby with Xcode
 
 ## Debug
 
-1. replace './DobbyExample/Dobby/libdobby.a' of the project with your generated lib just now.
+1. replace `./DobbyExample/Dobby/libdobby.a` of the project with your generated lib just now.
 2. happy debug!
 
