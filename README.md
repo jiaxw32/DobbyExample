@@ -1,6 +1,6 @@
 # DobbyExample
 
-Build and debug Dobby with Xcode
+Build and Debug Dobby with Xcode
 
 ## Build
 
@@ -11,10 +11,7 @@ Build and debug Dobby with Xcode
    +option(DOBBY_GENERATE_SHARED "Build shared library" OFF)
    ```
 3. run command: `mkdir xcode-build && cd ./xcode-build && cmake .. -G Xcode -DCMAKE_OSX_ARCHITECTURES=arm64`
-4. open `Dobby.xcodeproj` build，then generate `libdobby.a` lib.
-
-## Debug
-
-1. replace `./DobbyExample/Dobby/libdobby.a` of the project with your generated lib just now.
-2. happy debug!
+4. open `Dobby.xcodeproj`, select `dobby` target, then build, generate `libdobby.a` lib.
+5. run command to copy dobby lib and header file: `cp ./Dobby/xcode-build/build/Debug/libdobby.a ./Dobby/include/dobby.h ./DobbyExample/Dobby`
+6. HAPPY DEBUG!
 
